@@ -71,7 +71,6 @@ namespace Observability.Trace
                     {
                         trace.AddAspNetCoreInstrumentation(options=>
                         {
-                            options.EnableAspNetCoreSignalRSupport = true;
                             options.EnrichWithHttpRequest = (activity, httpRequest) =>
                             {
                                 activity.SetTag("http.method", httpRequest.Method);
@@ -89,50 +88,7 @@ namespace Observability.Trace
                             };
                         });
                     }
-
-                    if(traceOptions.EnableHangfireInstrumentation)
-                    {
-                        trace.AddHangfireInstrumentation(op =>
-                        {
-                            op.Filter = (job) =>
-                            {
-                                return traceOptions.jobOption.JobNames.Any(jn => job.Job.Method.Name.Contains(jn));
-                            };
-
-                            op.RecordException = traceOptions.jobOption.RecordException;
-                        });
-                    }
-                   
-                    if(traceOptions.EnableSqlInstrumentation)
-                    {
-                        trace.AddSqlClientInstrumentation(options =>
-                        {
-                            options.SetDbStatementForText = traceOptions.SqlOption.SetDbStatementForText;
-                            options.RecordException = traceOptions.SqlOption.RecordException;
-                            options.EnableConnectionLevelAttributes = true;
-                            options.SetDbStatementForStoredProcedure = traceOptions.SqlOption.SetDbStatementForStoredProcedure;
-                            options.SetDbStatementForText = traceOptions.SqlOption.SetDbStatementForText;
-
-                            options.Filter = commandObj =>
-                            {
-                                if (commandObj is DbCommand command)
-                                {
-                                    return traceOptions.SqlOption.CommandNames.Any(cn => command.CommandText.Contains(cn));
-                                }
-                                return false;
-                            };
-
-                        });
-                    }
-
-                    if(traceOptions.EnableMassTransitInstrumentation)
-                    {
-                        trace.AddMassTransitInstrumentation(options =>
-                        {
-                            options.TracedOperations = new HashSet<string>();
-                        });
-                    }
-
+                    
                     switch (traceOptions.Exporter.Type)
                     {
                         case ExporterType.OPTL:
