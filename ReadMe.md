@@ -114,7 +114,8 @@ Add an `observability.json` file in your application root with the following str
     "127.0.0.1",
     "::1"
   ]
-}```
+}
+```
 
 ## 🛠️ Usage
 
@@ -130,6 +131,7 @@ public void ConfigureServices(IServiceCollection services)
 {
     services.AddObservability();
 }
+```
 
 ## Step 3: Enable Observability Middleware and add `/healthz` endpoint.
 
@@ -140,3 +142,4 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 {
     app.AddObservability();
 }
+```
