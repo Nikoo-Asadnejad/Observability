@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = Observability
+build_property.ProjectDir = /Users/macbook/Projects/Observability/Observability/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

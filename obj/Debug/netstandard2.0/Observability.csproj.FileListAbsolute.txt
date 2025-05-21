@@ -1,0 +1,10 @@
+C:\Source\FlyToday-Backend\src\Library\Observability\bin\Debug\netstandard2.0\Observability.deps.json
+C:\Source\FlyToday-Backend\src\Library\Observability\bin\Debug\netstandard2.0\Observability.dll
+C:\Source\FlyToday-Backend\src\Library\Observability\bin\Debug\netstandard2.0\Observability.pdb
+C:\Source\FlyToday-Backend\src\Library\Observability\obj\Debug\netstandard2.0\Observability.csproj.AssemblyReference.cache
+C:\Source\FlyToday-Backend\src\Library\Observability\obj\Debug\netstandard2.0\Observability.GeneratedMSBuildEditorConfig.editorconfig
+C:\Source\FlyToday-Backend\src\Library\Observability\obj\Debug\netstandard2.0\Observability.AssemblyInfoInputs.cache
+C:\Source\FlyToday-Backend\src\Library\Observability\obj\Debug\netstandard2.0\Observability.AssemblyInfo.cs
+C:\Source\FlyToday-Backend\src\Library\Observability\obj\Debug\netstandard2.0\Observability.csproj.CoreCompileInputs.cache
+C:\Source\FlyToday-Backend\src\Library\Observability\obj\Debug\netstandard2.0\Observability.dll
+C:\Source\FlyToday-Backend\src\Library\Observability\obj\Debug\netstandard2.0\Observability.pdb

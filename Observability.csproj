@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RuntimeIdentifiers>win</RuntimeIdentifiers>
+		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AspNetCore.HealthChecks.Aws.S3" />
+		<PackageReference Include="AspNetCore.HealthChecks.Elasticsearch" />
+		<PackageReference Include="AspNetCore.HealthChecks.Hangfire" />
+		<PackageReference Include="AspNetCore.HealthChecks.MongoDb" />
+		<PackageReference Include="AspNetCore.HealthChecks.Network" />
+		<PackageReference Include="AspNetCore.HealthChecks.Rabbitmq" />
+		<PackageReference Include="AspNetCore.HealthChecks.Redis" />
+		<PackageReference Include="AspNetCore.HealthChecks.SignalR" />
+		<PackageReference Include="AspNetCore.HealthChecks.SqlServer" />
+		<PackageReference Include="AspNetCore.HealthChecks.Uris" />
+		<PackageReference Include="AWSSDK.Core" />
+		<PackageReference Include="Grpc.HealthCheck" />
+		<PackageReference Include="Grpc.Net.Client" />
+		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.HealthChecks" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+		<PackageReference Include="OpenTelemetry" />
+		<PackageReference Include="OpenTelemetry.Api" />
+		<PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" />
+		<PackageReference Include="OpenTelemetry.Extensions.Hosting" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.Hangfire" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.Http" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.MassTransit" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.Runtime" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.SqlClient" />
+		<PackageReference Include="prometheus-net" />
+		<PackageReference Include="Serilog" />
+		<PackageReference Include="System.Net.NameResolution" />
+		<PackageReference Include="System.Security.Permissions" />
+		<PackageVersion Include="Elastic.Clients.Elasticsearch" />
+		<PackageVersion Include="MongoDB.Driver" />
+	</ItemGroup>
+
+</Project>
