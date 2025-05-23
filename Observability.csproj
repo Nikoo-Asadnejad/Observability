@@ -1,43 +1,51 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
-		<RuntimeIdentifiers>win</RuntimeIdentifiers>
-		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
 	</PropertyGroup>
-
 	<ItemGroup>
-		<PackageReference Include="AspNetCore.HealthChecks.Aws.S3" />
-		<PackageReference Include="AspNetCore.HealthChecks.Elasticsearch" />
-		<PackageReference Include="AspNetCore.HealthChecks.Hangfire" />
-		<PackageReference Include="AspNetCore.HealthChecks.MongoDb" />
-		<PackageReference Include="AspNetCore.HealthChecks.Network" />
-		<PackageReference Include="AspNetCore.HealthChecks.Rabbitmq" />
-		<PackageReference Include="AspNetCore.HealthChecks.Redis" />
-		<PackageReference Include="AspNetCore.HealthChecks.SignalR" />
-		<PackageReference Include="AspNetCore.HealthChecks.SqlServer" />
-		<PackageReference Include="AspNetCore.HealthChecks.Uris" />
-		<PackageReference Include="AWSSDK.Core" />
-		<PackageReference Include="Grpc.HealthCheck" />
-		<PackageReference Include="Grpc.Net.Client" />
-		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.HealthChecks" />
-		<PackageReference Include="Microsoft.Extensions.DependencyInjection" />
-		<PackageReference Include="OpenTelemetry" />
-		<PackageReference Include="OpenTelemetry.Api" />
-		<PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" />
-		<PackageReference Include="OpenTelemetry.Extensions.Hosting" />
-		<PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" />
-		<PackageReference Include="OpenTelemetry.Instrumentation.Hangfire" />
-		<PackageReference Include="OpenTelemetry.Instrumentation.Http" />
-		<PackageReference Include="OpenTelemetry.Instrumentation.MassTransit" />
-		<PackageReference Include="OpenTelemetry.Instrumentation.Runtime" />
-		<PackageReference Include="OpenTelemetry.Instrumentation.SqlClient" />
-		<PackageReference Include="prometheus-net" />
-		<PackageReference Include="Serilog" />
-		<PackageReference Include="System.Net.NameResolution" />
-		<PackageReference Include="System.Security.Permissions" />
-		<PackageVersion Include="Elastic.Clients.Elasticsearch" />
-		<PackageVersion Include="MongoDB.Driver" />
+		<!-- Health Checks -->
+		<PackageReference Include="AspNetCore.HealthChecks.Aws.S3" Version="9.0.0" />
+		<PackageReference Include="AspNetCore.HealthChecks.Elasticsearch" Version="9.0.0" />
+		<PackageReference Include="AspNetCore.HealthChecks.Hangfire" Version="9.0.0" />
+		<PackageReference Include="AspNetCore.HealthChecks.MongoDb" Version="9.0.0" />
+		<PackageReference Include="AspNetCore.HealthChecks.Network" Version="9.0.0" />
+		<PackageReference Include="AspNetCore.HealthChecks.Rabbitmq" Version="9.0.0" />
+		<PackageReference Include="AspNetCore.HealthChecks.Redis" Version="9.0.0" />
+		<PackageReference Include="AspNetCore.HealthChecks.SignalR" Version="9.0.0" />
+		<PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="9.0.0" />
+		<PackageReference Include="AspNetCore.HealthChecks.Uris" Version="9.0.0" />
+
+		<!-- AWS & gRPC -->
+		<PackageReference Include="AWSSDK.Core" Version="4.0.0.6" />
+		<PackageReference Include="Grpc.HealthCheck" Version="2.71.0" />
+		<PackageReference Include="Grpc.Net.Client" Version="2.71.0" />
+
+		<!-- Microsoft Extensions & Diagnostics -->
+		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.HealthChecks" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.5" />
+
+		<!-- OpenTelemetry -->
+		<PackageReference Include="OpenTelemetry" Version="1.7.0" />
+		<PackageReference Include="OpenTelemetry.Api" Version="1.7.0" />
+		<PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.7.0" />
+		<PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.7.0" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.7.0" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.Hangfire" Version="1.7.0" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.7.0" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.MassTransit" Version="1.7.0" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.Runtime" Version="1.7.0" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.SqlClient" Version="1.7.0" />
+
+		<!-- Observability & Logging -->
+		<PackageReference Include="prometheus-net" Version="7.0.0" />
+		<PackageReference Include="Serilog" Version="3.0.1" />
+
+		<!-- System Libraries -->
+		<PackageReference Include="System.Net.NameResolution" Version="4.3.0" />
+		<PackageReference Include="System.Security.Permissions" Version="6.0.0" />
+
+		<!-- Data Clients -->
+		<PackageReference Include="MongoDB.Driver" Version="2.25.0" />
 	</ItemGroup>
 
 </Project>

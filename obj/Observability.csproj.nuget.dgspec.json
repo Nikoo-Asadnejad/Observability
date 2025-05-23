@@ -36,7 +36,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -45,63 +45,67 @@
           "dependencies": {
             "AWSSDK.Core": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[4.0.0.6, )"
             },
             "AspNetCore.HealthChecks.Aws.S3": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[9.0.0, )"
             },
             "AspNetCore.HealthChecks.Elasticsearch": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[9.0.0, )"
             },
             "AspNetCore.HealthChecks.Hangfire": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[9.0.0, )"
             },
             "AspNetCore.HealthChecks.MongoDb": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[9.0.0, )"
             },
             "AspNetCore.HealthChecks.Network": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[9.0.0, )"
             },
             "AspNetCore.HealthChecks.Rabbitmq": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[9.0.0, )"
             },
             "AspNetCore.HealthChecks.Redis": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[9.0.0, )"
             },
             "AspNetCore.HealthChecks.SignalR": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[9.0.0, )"
             },
             "AspNetCore.HealthChecks.SqlServer": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[9.0.0, )"
             },
             "AspNetCore.HealthChecks.Uris": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[9.0.0, )"
             },
             "Grpc.HealthCheck": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[2.71.0, )"
             },
             "Grpc.Net.Client": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[2.71.0, )"
             },
             "Microsoft.AspNetCore.Diagnostics.HealthChecks": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[2.2.0, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[9.0.5, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.25.0, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -111,59 +115,59 @@
             },
             "OpenTelemetry": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[1.7.0, )"
             },
             "OpenTelemetry.Api": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[1.7.0, )"
             },
             "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[1.7.0, )"
             },
             "OpenTelemetry.Extensions.Hosting": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[1.7.0, )"
             },
             "OpenTelemetry.Instrumentation.AspNetCore": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[1.7.0, )"
             },
             "OpenTelemetry.Instrumentation.Hangfire": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[1.7.0, )"
             },
             "OpenTelemetry.Instrumentation.Http": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[1.7.0, )"
             },
             "OpenTelemetry.Instrumentation.MassTransit": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[1.7.0, )"
             },
             "OpenTelemetry.Instrumentation.Runtime": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[1.7.0, )"
             },
             "OpenTelemetry.Instrumentation.SqlClient": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[1.7.0, )"
             },
             "Serilog": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[3.0.1, )"
             },
             "System.Net.NameResolution": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[4.3.0, )"
             },
             "System.Security.Permissions": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[6.0.0, )"
             },
             "prometheus-net": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -177,12 +181,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/8.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }
